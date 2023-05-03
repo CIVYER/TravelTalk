@@ -1,0 +1,320 @@
+html, body, .container{
+    height: 100%;
+}
+
+body{
+	margin: 0px;
+	background-image: url(../img/sbg.png);
+	border-image-width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@font-face{
+	font-family: "more-sugar-thin";
+	src: url("../fonts/MoreSugar-Regular.otf");
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 87.1% 10%;
+	grid-auto-flow: row dense;
+	grid-auto-flow: column dense;
+
+}
+
+.header{
+	/* grid-area: header; */
+
+	display: flex;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	gap: 1em;
+
+	border-bottom: 1px solid black;
+	background-color: #7484C4;
+	padding: .3em;
+
+}
+.logo-c{
+	flex: 1;
+}
+#img-logo{
+	height: 4rem;
+}
+
+#btn-settings{
+	height: 4rem;
+	width: 5rem;
+
+	background-image: url(../img/settings.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+
+
+/*
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
+*/
+.center_body{
+	display: grid;
+	grid-auto-columns: 1fr 60px 100px 1fr;
+	grid-template-rows: 5% 10% repeat(3, 25%);
+	grid-template-areas:
+	'......   ......   ......   ......'
+	's-text   s-text   s-text   s-text'
+	'FName FName ......      ContactNo'
+	'Username Username ...... Password'
+	'Email Email ......         Password';
+	padding: 0% 2% 0% 4%;
+}
+.s-text-c{
+	height: 100%;
+	grid-area: s-text;
+	text-align: center;
+}
+#s-text{
+	height: 100%;
+}
+
+/* lllllllllllllllllllllllllllll */
+
+.input{
+	/* background-image: url(../img/inputBG.png);
+	background-size: 99% 98%;
+	background-repeat: no-repeat;
+	background-position: center; */
+	outline: 0;
+	border: 5px solid #D8728C;
+	border-radius: 1000px;
+	background-color: #AFAEE4;
+	text-align: center;
+	font-size: 25px;
+}
+/* first name box */
+.FName{
+	grid-area: FName;
+/* ################## */
+	display: grid;
+	grid-template-columns: 5%;
+	grid-template-areas:
+	'text text ......'
+	'input input input';
+	grid-template-rows: auto 1fr;
+}
+.text-con-FName{
+	grid-area: text;
+}
+#text-FName{
+	--tc:#353e62;
+	display: contents;
+	/* grid-area: text; */
+
+	font-family: more-sugar-thin;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--tc);
+	font-size: 30px;
+	color: white;
+}
+.input-FName{
+	grid-area: input;
+}
+
+/* username box */
+
+.username{
+	grid-area: Username;
+/* ################## */
+	display: grid;
+	grid-template-columns: 5% auto auto 30%;
+	grid-template-areas:
+	'text text ...... ......'
+	'input input input ......';
+	grid-template-rows: auto 1fr;
+}
+.text-con-uname{
+	grid-area: text;
+}
+#text-uname{
+	--tc:#353e62;
+	display: contents;
+	/* grid-area: text; */
+
+	font-family: more-sugar-thin;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--tc);
+	font-size: 30px;
+	color: white;
+}
+.input-uname{
+	grid-area: input;
+}
+
+/* email box */
+
+.emailAdd{
+	grid-area: Email;
+/* ################## */
+	display: grid;
+	grid-template-columns: 5% auto auto 10%;
+	grid-template-areas:
+	'text text ...... ......'
+	'input input input ......';
+	grid-template-rows: auto 1fr;
+}
+.text-con-emailAdd{
+	grid-area: text;
+}
+#text-emailAdd{
+	--tc:#353e62;
+	display: contents;
+	/* grid-area: text; */
+
+	font-family: more-sugar-thin;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--tc);
+	font-size: 30px;
+	color: white;
+}
+.input-emailAdd{
+	grid-area: input;
+}
+
+/* contactNo box */
+
+.contactNo{
+	grid-area: ContactNo;
+/* ################## */
+	display: grid;
+	grid-template-columns: 15% 5% auto auto 10%;
+	grid-template-areas:
+	'...... text text ...... ......'
+	'......   input input input input';
+	grid-template-rows: auto 1fr;
+}
+.text-con-contactNo{
+	grid-area: text;
+}
+#text-contactNo{
+	--tc:#353e62;
+	display: contents;
+	/* grid-area: text; */
+
+	font-family: more-sugar-thin;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--tc);
+	font-size: 30px;
+	color: white;
+}
+.input-contactNo{
+	grid-area: input;
+}
+
+/* password box */
+
+.password{
+	grid-area: Password;
+/* ################## */
+	display: grid;
+	grid-template-columns: 15% 15% auto auto 10%;
+	grid-template-areas:
+	'. . . . .'
+	'textpass      textpass    inputpass    inputpass    inputpass'
+	'textconpass   textconpass inputconpass inputconpass inputconpass'
+	'. . Submit Submit Submit';
+	grid-template-rows: 10% 30% 30% 30%;
+	row-gap: 15px;
+}
+.text-con-password{
+	grid-area: textpass;
+}
+#text-password{
+	--tc:#353e62;
+	display: contents;
+	/* grid-area: text; */
+
+	font-family: more-sugar-thin;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--tc);
+	font-size: 30px;
+	color: white;
+}
+.input-password{
+	grid-area: inputpass;
+}
+.text-con-conpassword{
+	grid-area: textconpass;
+}
+#text-conpassword{
+	--tc:#353e62;
+	display: contents;
+	/* grid-area: text; */
+
+	font-family: more-sugar-thin;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--tc);
+	font-size: 30px;
+	color: white;
+}
+.input-conpassword{
+	grid-area: inputconpass;
+}
+
+/* submit */
+.submit{
+	grid-area: Submit;
+	display: grid;
+	grid-template-areas: 
+	'. button'
+	'. button';
+
+	text-align: right;
+}
+
+.btn-con{
+	grid-area: button;
+}
+.btn-wrap{
+	display: contents;
+}
+
+#btn-submit{
+	background-image: url(../img/submit.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-color: transparent;
+	border: 0;
+	height: 80px;
+	width: 100%;
+	grid-area: button;
+}
+/*
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
+*/
+.footer{
+	background-color: RED;
+	grid-column: span 3;
+	border-top: 1px solid black;
+	text-align: center;
+	align-items: center;
+}

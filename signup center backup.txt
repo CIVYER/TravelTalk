@@ -1,0 +1,65 @@
+.center_body{
+	display: grid;
+	grid-template-rows: 15% 1fr 1fr 1fr;
+	grid-template-columns: 50% 50%;
+	grid-auto-flow: row dense;
+	grid-auto-flow: column dense;
+
+	padding-top: 49px;
+}
+
+.con{
+	text-align: center;
+}
+
+.signup-text-container{
+	text-align: center;
+	grid-row: 1;
+	grid-column: span 2;
+}
+
+#signup-text{
+	height: 100%;
+}
+
+.fullname-container{
+	text-align: center;
+}
+.Input-fullname{
+	background-image: url(../img/inputBG.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 50%;
+	width: 85%;
+	outline: none;
+	text-align: center;
+	border: 0;
+	font-size: 25px
+}
+
+.Input-username{
+	background-image: url(../img/inputBG.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 50%;
+	width: 85%;
+	outline: none;
+	text-align: center;
+	border: 0;
+	font-size: 25px
+}
+
+.Input-email{
+	background-image: url(../img/inputBG.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 50%;
+	width: 85%;
+	outline: none;
+	text-align: center;
+	border: 0;
+	font-size: 25px
+}
