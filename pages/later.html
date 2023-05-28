@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TravelTalk - Feed</title>
+	<link rel="stylesheet" type="text/css" href="../css/later.css">
+	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/places.css">
+</head>
+<body>
+	<div  class="pop-c" id="popup"></div>
+	<div class="main-c">
+
+		<!-- /* lllllllllllllllllllllllllllll */ -->
+
+		<div class="header">
+			<div class="logo-c"> <a href="../main.html"> <img src="../img/logo.png" id="img-logo"> </a> </div>
+			<!-- <div class="dp-c"><a href="./user-profile.html"><img src="../img/dp_nt.png" id="img-dp"></a></div> -->
+			<div class="submit-c"> <a href=""> <button id="btn-settings"></button> </a> </div>
+		</div>
+
+		<!-- /* lllllllllllllllllllllllllllll */ -->
+
+		<div class="body-c">
+			<div class="search-text-container">
+
+				<div class="search">
+					<div class = "box">
+		
+					<input type = "text" placeholder = "Search..." name="search_">
+					<a href ="../pages/login.html"> <button id="search-button"></button> </a>
+		
+					</div>
+				</div>
+				<div id = "feed_text"></div>
+			</div>
+			<div class="feed_container">
+				<!-- <div class="card card_create"> -->
+				<div class="card card_small"><button id="add" onclick="open_popup()"></button></div>
+				<div class="card card_large"> 
+					<p class = "title_img">Must visit Bohol!</p>
+					<img src="../img/places/Bohol.jpeg" alt="" class="place_img img_large" onclick="popup()"> 
+					<p class = "text_desc">text</p>
+				</div>
+				<div class="card card_medium">
+					<p class = "title_img">text</p>
+					<img src="../img/places/Batanes.jpeg" alt="" class="place_img img_med">
+					<p class = "text_desc">text</p>
+				</div>
+				<div class="card card_large">
+					<p class = "title_img">text</p>
+					<img src="../img/places/Bataan death march.jpeg" alt="" class="place_img img_large"> 
+					<p class = "text_desc">text</p>
+				</div>
+				<div class="card card_small">
+					<p class = "title_img">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<img src="../img/places/Banaue.jpeg" alt="" class="place_img img_small"> 
+					<p class = "text_desc">text</p>
+				</div>
+				<div class="card card_large"></div>
+				<div class="card card_large"></div>
+				<div class="card card_large"></div>
+				<div class="card card_small"></div>
+				<div class="card card_medium"></div>
+		
+				<div class="card card_small"></div>
+				<div class="card card_large"></div>
+				<div class="card card_small"></div>
+				<div class="card card_medium"></div>
+				<div class="card card_large"></div>
+		
+				<div class="card card_large"></div>
+				<div class="card card_large"></div>
+				<div class="card card_large"></div>
+				<div class="card card_small"></div>
+				<div class="card card_medium"></div>
+				
+				
+			</div> 
+		</div>
+
+		<!-- /* lllllllllllllllllllllllllllll */ -->
+		<div class="footer">
+			<div class="baggage-c"> <img src="../img/baggage.png" id="img-baggage"> </div>
+			<div class="about-c"><a href="../pages/about-us.html"><button id="btn-about"></button></a></div>
+			<div class="nature-c"> <img src="../img/nature.png" id="img-nature"> </div>
+	  	</div>
+		
+		<!-- /* lllllllllllllllllllllllllllll */ -->
+
+	</div>
+	<script src="../js/popup.js"></script>
+</body>
+
+</html>
+
+
