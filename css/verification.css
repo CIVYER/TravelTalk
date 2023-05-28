@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background-image: url(../img/bg_ver.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+    font-family: more-sugar-thin;
+    color: #353e62;
+
+}
+@font-face{
+	font-family: "more-sugar-thin";
+	src: url("../fonts/MoreSugar-Thin.ttf");
+}
+@font-face{
+	font-family: "more-sugar-regular";
+	src: url("../fonts/MoreSugar-Regular.ttf");
+}
+/* llllllllllllll */
+
+
+
+/* llllllllllllll */
+
+.center_body{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/* llllllllllllll */
+
+.title_ver{
+    font-family: more-sugar-regular;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #7484C4;
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #353e62;
+    padding-left: 30px;
+	align-self: flex-start;
+}
+
+.content{
+    text-align: center;
+    font-size: 30px;
+	height: max-content;
+}
+.resend{
+	height: max-content;
+}
+.user_dp{
+    text-align: center;
+}
+#img-dp{
+    /* object-fit: contain; */
+    height: 150px;
+    width: 150px;
+}
+.save-btn{
+	align-self: flex-end;
+	object-fit: contain;
+}
+#save-btn{
+	height: 4em;
+	padding: 0em 2em 0em 0em;
+}

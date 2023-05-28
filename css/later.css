@@ -10,7 +10,28 @@ body{
 	--card_large: 45;
 }
 /* lllllllllllllllllllllllllllll */
-
+.pop-c{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	/* top: 25vh; */
+	/* left: 43vh; */
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/pop-posted.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 100;
+	transform: scale(.1);
+	transition: transform 0.4s, top 0.4s;
+	visibility: hidden;
+}
+.openpop{
+	transform: scale(1);
+	visibility: visible;
+}
+/* lllllllllllllllllllllllllllll */
 .main-c{
 	display: grid;
 	grid-template-areas: 
@@ -155,7 +176,7 @@ body{
 	width: 97%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, var(--card_width));
-	grid-auto-rows: var(--row_increment);
+	grid-auto-rows: auto;
 	justify-content: center;
 } 
 .card {
@@ -163,6 +184,7 @@ body{
 	margin: 15px 10px;
 	border-radius: var(--card_border_radius);
 	background-color: red;
+
 }
 .card_small {
 	grid-row-end: span var(--card_small);

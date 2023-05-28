@@ -10,12 +10,36 @@ body{
 }
 @font-face{
 	font-family: "more-sugar-thin";
-	src: url("../fonts/MoreSugar-Regular.otf");
+	src: url("../fonts/MoreSugar-Thin.otf");
 }
 :root{
 	--tc:#353e62;
 }
-
+/* lllllllllllllllllllllllllllll */
+.pop-c{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: -11em;
+	right: -20em;
+	height: 60%;
+	width: 50%;
+	background-image: url(../img/pop-log.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	z-index: 100;
+	transform: scale(.1);
+	transition:bottom 1s, right 1s, transform 1s;
+	transition-timing-function: ease;
+	/* visibility: hidden; */
+}
+.openpop{
+	transform: scale(1);
+	visibility: visible;
+	bottom: 0;
+	right: 0;
+}
 /*llllllllllllllllllllllllllllll*/
 /*llllllllllllllllllllllllllllll*/
 /*llllllllllllllllllllllllllllll*/
@@ -49,7 +73,9 @@ body{
 
 	background-color: #7484C4;
 	padding: .3em;
+	z-index: 1;
 
+	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
 }
 .logo-c{
 	flex: 1;
@@ -111,8 +137,11 @@ body{
 	outline: none;
 	text-align: center;
 	border: 0;
-	font-size: 25px;
 	z-index: 1;
+
+	font-family: "more-sugar-thin";
+	color: #353e62;
+	font-size: 25px;
 }
 .twrap{
 	text-align: left;

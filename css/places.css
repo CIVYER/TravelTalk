@@ -1,0 +1,72 @@
+@font-face{
+	font-family: "more-sugar-regular";
+	src: url("../fonts/MoreSugar-Regular.otf");
+}
+
+@font-face{
+	font-family: "more-sugar-thin";
+	src: url("../fonts/MoreSugar-Thin.otf");
+}
+
+:root {
+	--card_width: 250px;
+	--card_border_radius: 16px;
+	--row_increment: 10px;
+	--card_small: 26;
+	--card_medium: 33;
+	--card_large: 45;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+/* .img_border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: contain;
+    width: calc( var(--card_width) - 200em);
+    height: 100%;
+    border-radius: var(--card_border_radius);
+    border: 1px solid black;
+} */
+/* .img_large{
+    height: 100% - 26em;
+}
+.img_med{
+    height: 2em;
+} */
+/* .img_small{
+    height: 100em;
+} */
+.place_img{
+    height: 90%;
+    width: 70%;
+    object-fit:fill;
+    border-radius: var(--card_border_radius);
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.4);
+    
+}
+.title_img{
+    font-family: "more-sugar-regular";
+    font-weight: bolder;
+	color: #353e62;
+	font-size: 30px;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+.text_desc{
+    font-family: "more-sugar-thin";
+	color: #353e62;
+    
+	font-size:20px;
+
+    text-align: center;
+}
