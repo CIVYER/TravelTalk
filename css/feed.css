@@ -5,9 +5,10 @@ body{
 	--card_width: 250px;
 	--card_border_radius: 16px;
 	--row_increment: 10px;
-	--card_small: 26;
-	--card_medium: 33;
-	--card_large: 45;
+	--card_small: 36;
+	--card_medium: 43;
+	--card_large: 55;
+	--card_height:500px;
 }
 /* lllllllllllllllllllllllllllll */
 
@@ -23,35 +24,118 @@ body{
 
 /* lllllllllllllllllllllllllllll */
 
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+
 .header{
 	grid-area: header;
+	z-index: 1;
+	max-height: max-content;
 
 	display: flex;
 	flex-wrap: wrap;
 
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
-	gap: 1em;
+	margin: 1em;
+	/* gap: 5.4em; */
+	padding: 0.1em;
 
-	background-color: #7484C4;
-	padding: .3em;
+	
+	border-radius: 4em;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+	background-color: #EEF4F6;
 
-	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+}
+.logo{
+	padding-top: 1em;
+}
+#btn-login{
+	height: 2rem;
+	width: 4rem;
+	
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+}
+
+#btn-signup{
+	height: 2rem;
+	width: 5rem;
+
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
 
 }
-.logo-c{
-	flex: 1;
+
+#btn-logo{
+	height: 4.5rem;
+	width: 18rem;
+	
+	/* margin-top: 20px; */
+
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
 }
-#img-logo{
-	height: 4rem;
+
+#btn-help{
+	height: 2rem;
+	width: 5rem;
+
+	background-image: url(../img/help.png);
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
 }
-#img-dp{
-	height: 4rem;
+
+#btn-menu{
+	height: 1.5rem;
+	width: 3rem;
+
+	
+	background-image: url(../img/menu.png);
+	background-size: contain;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
 }
+
+#btn-later{
+	height: 2rem;
+	width: 5rem;
+
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+}
+
 #btn-settings{
 	height: 4rem;
-	width: 5rem;
+	width: 4rem;
 
 	background-image: url(../img/settings.png);
 	background-position: center;
@@ -60,7 +144,20 @@ body{
 	border: 0;
 	background-color: transparent;
 	cursor: pointer;
+
 }
+
+
+
+
+/* llllllllll */
+
+
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
+/*llllllllllllllllllllllllllllll*/
 
 /* lllllllllllllllllllllllllllll */
 
@@ -149,32 +246,48 @@ body{
 /* cccc */
 
 .feed_container {
-	grid-area: cards;
+	/* grid-area: cards;
 	margin-top:10px;
 	padding: 10px;
 	width: 97%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, var(--card_width));
 	grid-auto-rows: var(--row_increment);
+	justify-content: center; */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	justify-content: center;
+	align-content: center;
 } 
 .card {
 	padding: 0;
 	margin: 15px 10px;
 	border-radius: var(--card_border_radius);
 	background-color: red;
+	height: var(--card_height);
 }
 .card_small {
+	width: var(--card_width);
+	/* height: var(--card_height); */
 	grid-row-end: span var(--card_small);
 	background-color: #CCEFCC;
+	overflow: hidden;
 }
 .card_medium {
+	width: var(--card_width);
+	/* height: var(--card_height); */
+
 	grid-row-end: span var(--card_medium);
 	background-color: #D9CFF8;
+	overflow: hidden;
 }
 .card_large {
+	/* height: var(--card_height); */
+	width: var(--card_width);
 	grid-row-end: span var(--card_large);
 	background-color: #F8EDB7;
+	overflow: hidden;
 }
 
 #add{
@@ -197,9 +310,9 @@ body{
 	background: rgb(255,170,248);
 	background: linear-gradient(0deg, rgba(255,170,248,1) 0%, rgba(196,195,244,1) 100%);
 	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
-
 	height: 100%;
 	padding: 0em 1em 0em .5em;
+	grid-area: footer;
 
 	display: grid;
 	grid-template-columns: 1fr 200px 1fr;
@@ -241,3 +354,4 @@ body{
 	height: 4em;
 	width: 5em;
 }
+

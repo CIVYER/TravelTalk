@@ -12,9 +12,9 @@
 	--card_width: 250px;
 	--card_border_radius: 16px;
 	--row_increment: 10px;
-	--card_small: 26;
-	--card_medium: 33;
-	--card_large: 45;
+	--card_small: 36;
+	--card_medium: 43;
+	--card_large: 55;
 }
 .card{
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
+    justify-content: flex-start;
 }
 /* .img_border{
     display: flex;
@@ -36,36 +36,93 @@
     border: 1px solid black;
 } */
 /* .img_large{
-    height: 100% - 26em;
+    object-fit: fill;
+    border-radius: var(--card_border_radius);
+    height: 30em;
 }
 .img_med{
-    height: 2em;
+    object-fit: fill;
+    border-radius: var(--card_border_radius);
+    height: 25em;
+}
+.img_small{
+    object-fit: fill;
+    border-radius: var(--card_border_radius);
+    height: 20em;
 } */
-/* .img_small{
-    height: 100em;
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .card_small {
+
+
+}
+.card_medium {
+
+}
+.card_large {
+
 } */
+
 .place_img{
-    height: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    overflow: hidden;
+    height: 50%;
     width: 70%;
-    object-fit:fill;
     border-radius: var(--card_border_radius);
     border: 2px solid white;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.4);
+    cursor: pointer;
     
+}
+.Ftitle_img{
+    font-family: "more-sugar-regular";
+    font-weight: bolder;
+	color: #353e62;
+	font-size: 20px;
+    text-align: center;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+}
+.Ftext_desc{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: "more-sugar-thin";
+	color: #353e62;
+    width: 80%;
+	font-size:20px;
+
+    text-align: center;
 }
 .title_img{
     font-family: "more-sugar-regular";
     font-weight: bolder;
 	color: #353e62;
-	font-size: 30px;
+	font-size: 20px;
     text-align: center;
-    /* border: 1px solid black; */
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
     
 }
 .text_desc{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     font-family: "more-sugar-thin";
 	color: #353e62;
-    
+    width: 80%;
 	font-size:20px;
 
     text-align: center;

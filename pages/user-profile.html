@@ -6,14 +6,36 @@
     <title>TravelTalk - User Profile</title>
     <link rel="stylesheet" href="../css/user-profile.css">
 	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
+	<div id="drop-visibi" class="dropdown">
+		<button id="btn-setting" onclick="setti()"></button>
+		<a href="../pages/user-profile.html"><div class="drop-con">Profile</div></a>
+		<a href="../pages/saved-post.html" class="drop-con">Saved Post<div class="drop-con"></div></a>
+		<a href="../main.html"><div class="drop-con">Logout</div></a>
+	</div>
+	<div id="pop-m" class="menu-c">
+		<button class="menu-close" onclick="menu_close()"></button>
+		<a href="../pages/about-us.html"><div class="menu-content"><div>About Us</div></div></a>
+		<a href="../pages/user-profile.html"><div class="menu-content"><div>Profile</div></div></a>
+		<a href="../pages/saved-post.html"><div class="menu-content"><div>Saved Post</div></div></a>
+		<a href="../pages/FAQ.html"><div class="menu-content"><div>FAQ'S</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+	</div>
     <div class="container">
         <!-- ####################### -->
-        <div class="header">
-            <div class="logo-c"> <a href="../main.html"> <img src="../img/logo.png" id="img-logo"> </a> </div>
-            <div class="submit-c"> <a href=""> <button id="btn-settings"></button> </a> </div>
-        </div>
+		<div class="header">
+			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
+			<div class = "gap"><a href="../pages/login.html"> <button id="btn-login"></button> </a> </div>
+			<div class = "gap"><a href="../pages/signup.html"> <button id="btn-signup"></button> </a> </div>
+			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
+			<div class = "gap"><a href="../pages/feed.html"><button id="btn-later"></button></a></div>
+			<div class = "gap"><a href="../pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><button id="btn-settings" onclick="setti()"></button></div>
+		</div>
         <!-- ####################### -->
 
         <div class="center_body">
@@ -80,5 +102,6 @@
         </div>
         <!-- ####################### -->
     </div>
+    <script src="../js/popup.js"></script>
 </body>
 </html>

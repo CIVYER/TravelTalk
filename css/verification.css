@@ -17,7 +17,17 @@ body{
 }
 /* llllllllllllll */
 
-
+.inp{
+    border-top: 0;
+    outline: 0;
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-style: dashed;
+    border-color: black;
+    font-size: 50px;
+    text-align: center;
+}
 
 /* llllllllllllll */
 

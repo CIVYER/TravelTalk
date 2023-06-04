@@ -6,18 +6,38 @@
 	<title>TravelTalk - Feed</title>
 	<link rel="stylesheet" type="text/css" href="../css/feed.css">
 	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
-	<link rel="stylesheet" href="../css/places.css
-	">
+	<link rel="stylesheet" href="../css/places.css">
+	<link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
+	<div id="drop-visibi" class="dropdown">
+		<button id="btn-setting" onclick="setti()"></button>
+		<a href="../pages/user-profile.html"><div class="drop-con">Profile</div></a>
+		<a href="../pages/saved-post.html" class="drop-con"><div class="drop-con">Saved Post</div></a>
+		<a href="../main.html"><div class="drop-con">Logout</div></a>
+	</div>
+	<div id="pop-m" class="menu-c">
+		<button class="menu-close" onclick="menu_close()"></button>
+		<a href="../pages/about-us.html"><div class="menu-content"><div>About Us</div></div></a>
+		<a href="../pages/user-profile.html"><div class="menu-content"><div>Profile</div></div></a>
+		<a href="../pages/saved-post.html"><div class="menu-content"><div>Saved Post</div></div></a>
+		<a href="../pages/FAQ.html"><div class="menu-content"><div>FAQ'S</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+	</div>
 	<div class="main-c">
 
 		<!-- /* lllllllllllllllllllllllllllll */ -->
 
 		<div class="header">
-			<div class="logo-c"> <a href="../main.html"> <img src="../img/logo.png" id="img-logo"> </a> </div>
-			<div class="dp-c"><a href="./user-profile.html"><img src="../img/dp_nt.png" id="img-dp"></a></div>
-			<div class="submit-c"> <a href=""> <button id="btn-settings"></button> </a> </div>
+			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
+			<div class = "gap"><a href="./pages/login.html"> <button id="btn-login"></button> </a> </div>
+			<div class = "gap"><a href="./pages/signup.html"> <button id="btn-signup"></button> </a> </div>
+			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
+			<div class = "gap"><a href="./pages/feed.html"><button id="btn-later"></button></a></div>
+			<div class = "gap"><a href="./pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><button id="btn-settings" onclick="setti()"></button></div>
 		</div>
 
 		<!-- /* lllllllllllllllllllllllllllll */ -->
@@ -29,7 +49,7 @@
 					<div class = "box">
 		
 					<input type = "text" placeholder = "Search..." name="search_">
-					<a href ="../pages/login.html"> <button id="search-button"></button> </a>
+					<a href ="#pimg"> <button id="search-button"></button> </a>
 		
 					</div>
 				</div>
@@ -37,28 +57,126 @@
 			</div>
 			<div class="feed_container">
 				<!-- <div class="card card_create"> -->
-				<div class="card card_small"><a href=""> <button id="add"></button> </a></div>
-				<div class="card card_large"> <img src="../img/places/Aurora.jpeg" alt="" class="place_img"> </div>
-				<div class="card card_medium"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
+				<a href="../pages/create.html"><div class="card card_small"><button id="add"></button></div></a>
+				<div class="card card_large"> 
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,0,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_medium">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/CDC.jpg" alt="" id="pimg" onclick="see_more(this.src,1,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,2,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_small">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/KoreanTown.jpeg" alt="" id="pimg" onclick="see_more(this.src,3,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,4,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,5,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,6,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_small">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,7,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_medium">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,8,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
 		
-				<div class="card card_small"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
-				<div class="card card_large"></div>
-		
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
+				<div class="card card_small">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,9,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_large">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,10,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_small">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,11,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_medium">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,12,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+
 				
 				
 			</div> 
@@ -74,6 +192,7 @@
 		<!-- /* lllllllllllllllllllllllllllll */ -->
 
 	</div>
+	<script src="../js/popup.js"></script>
 </body>
 
 </html>

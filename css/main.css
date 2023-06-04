@@ -3,75 +3,143 @@ body, html, .container{
 }
 body{
 	margin: 0%;
-	background-image: url(../img/bg.png);
+	/* background-image: url(../img/bg.png); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 /* llllllllll */
+
 .container{
 	display: grid;
 	grid-template-areas:
 	'header'
 	'bcenter'
 	'footer';
-	grid-template-rows: auto 87.1% 13%;
+	grid-template-rows: 20% 80%;
 	grid-template-columns: 100%;
 }
 
 /* llllllllll */
 
 .header{
-	grid-area: header;
+	z-index: 1;
+	max-height: max-content;
 
 	display: flex;
 	flex-wrap: wrap;
 
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
-	gap: 1em;
+	margin: 1em;
+	/* gap: 5.4em; */
+	padding: 0.1em;
 
-	background-color: #7484C4;
-	padding: .3em;
 	
-	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+	border-radius: 4em;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+	background-color: #EEF4F6;
 
 }
-.logo-c{
-	flex: 1;
+.logo{
+	padding-top: 1em;
 }
-#img-logo{
-	height: 4rem;
-}
-.later-c{
-	position: absolute;
-	top: .99em;
-	right: 5em;
-}
-#btn-later{
-	height: 11rem;
-	width: 10rem;
-
-	background-image: url(../img/later.png);
-	background-size: cover;
-	background-position: top;
+#btn-login{
+	height: 2rem;
+	width: 4rem;
+	background-image: url(../img/login.png);
+	background-size: contain;
+	background-position: center;
 	background-color: transparent;
 	background-repeat: no-repeat;
 	border: 0;
 	cursor: pointer;
 }
-#btn-settings{
-	height: 4rem;
+
+#btn-signup{
+	height: 2rem;
+	width: 5rem;
+	background-image: url(../img/signup.png);
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
+}
+
+#btn-logo{
+	height: 4.5rem;
+	width: 18rem;
+	
+	/* margin-top: 20px; */
+
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
+}
+
+#btn-help{
+	height: 2rem;
 	width: 5rem;
 
-	background-image: url(../img/settings.png);
+	background-image: url(../img/help.png);
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
+}
+
+#btn-menu{
+	height: 1.5rem;
+	width: 3rem;
+
+	
+	background-image: url(../img/menu.png);
+	background-size: contain;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+
+}
+
+#btn-later{
+	height: 2rem;
+	width: 5rem;
+
+	background-image: url(../img/feed.png);
+	background-size: contain;
+	background-position: center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+}
+
+#btn-settings{
+	height: 4rem;
+	width: 4rem;
+
+
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	border: 0;
 	background-color: transparent;
-	cursor: pointer;
+
+
 }
 
 /* llllllllll */
@@ -91,51 +159,22 @@ body{
 	border: 0;
 }
 .btns-c{
-	max-width: max-content;
+	max-width: 15em;
+	min-width: 15rem;
 	z-index: 1;
 	grid-column: 1;
 	grid-row: 1;
 
 	display: flex;
-	flex-direction: row;
-	gap: .6em;
-	padding: 0em 7em 0em 0em;
+	flex-direction: column;
+	gap: .5em;
+	padding: 1.5em 0em 0em 2em;
 }
-#btn-login{
-	height: 3.5em;
-	width: 9em;
-	cursor: pointer;
 
-	background-image: url(../img/login.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: transparent;
-	border: 0;
-}
-#btn-signup{
-	height: 3.5em;
-	width: 9em;
-	cursor: pointer;
-
-	background-image: url(../img/signup.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: transparent;
-	border: 0;
-}
 
 /* llllllllll */
 
-.footer{
-	background: rgb(255,170,248);
-	background: linear-gradient(0deg, rgba(255,170,248,1) 0%, rgba(196,195,244,1) 100%);
-	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
-
-	height: 100%;
-	padding: 0em 1em 0em .5em;
-
+.footer-grid{
 	display: grid;
 	grid-template-columns: 1fr 200px 1fr;
 	grid-template-rows: 1fr;
@@ -143,39 +182,52 @@ body{
 	grid-row-gap: 0px;
 	grid-template-areas:
 	'baggage about_us nature';
-	align-items: center;
-	justify-content: center;
-	align-content: center;
 }
 
+@media screen and (max-width: 768px) {
+	.footer-grid {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'baggage about_us nature';
+	}
+}
+footer{	
 
-
-.baggage-c{
+	background-color: #DDD8C9;
+	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+}	
+#baggage{
 	grid-area: baggage;
-}
-.about-c{
-	grid-area: about_us;
-	text-align: center;
-}
-.nature-c{
-	grid-area: nature;
-	text-align: right;
-}
-#img-baggage{
-	height: 4em;
-	width: 3em;
-}
-#btn-about{
-	background-image: url(../img/about_us.png);
-	background-size: contain;
+	background-image: url(../img/baggage.png);
+	width: 100%;
+  	height: 5.313em;
 	background-repeat: no-repeat;
+	background-size: 80px 90px;
+	background-position: left;
+}
+#nature{
+	grid-area: nature;
+	width:100%;
+	height:100%;
+	background-image: url(../img/nature.png);
+ 	background-repeat: no-repeat;
+	background-size: 100px 85px ;
+	background-position: right;
+}
+#about_us{
+	grid-area: about_us;
+	background-image: url(../img/about_us.png);
+	background-repeat: no-repeat;
+	background-size: 200px 80px;
+	height: 100%;
+	width: 100%;
 	background-color: transparent;
 	border: 0;
-	height: 4em;
-	width: 13em;
+	cursor: pointer;
+	background-position: center;
+}
+.btn-f{
 	cursor: pointer;
 }
-#img-nature{
-	height: 4em;
-	width: 5em;
-}
+
+

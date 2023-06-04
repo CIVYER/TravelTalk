@@ -3,21 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TravelTalk - Feed</title>
+	<title>TravelTalk - Later</title>
 	<link rel="stylesheet" type="text/css" href="../css/later.css">
 	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
 	<link rel="stylesheet" href="../css/places.css">
+	<link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
 	<div  class="pop-c" id="popup"></div>
+	<div id="drop-visibi" class="dropdown">
+		<button id="btn-setting" onclick="setti()"></button>
+		<a href="../pages/login.html"><div class="drop-con">Profile</div></a>
+		<a href="../pages/login.html"><div class="drop-con">Saved Post</div></a>
+	</div>
+	<div id="pop-m" class="menu-c">
+		<button class="menu-close" onclick="menu_close()"></button>
+		<a href="../pages/about-us.html"><div class="menu-content"><div>About Us</div></div></a>
+		<a href="../pages/user-profile.html"><div class="menu-content"><div>Profile</div></div></a>
+		<a href="../pages/saved-post.html"><div class="menu-content"><div>Saved Post</div></div></a>
+		<a href="../pages/FAQ.html"><div class="menu-content"><div>FAQ'S</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+	</div>
 	<div class="main-c">
 
 		<!-- /* lllllllllllllllllllllllllllll */ -->
 
 		<div class="header">
-			<div class="logo-c"> <a href="../main.html"> <img src="../img/logo.png" id="img-logo"> </a> </div>
-			<!-- <div class="dp-c"><a href="./user-profile.html"><img src="../img/dp_nt.png" id="img-dp"></a></div> -->
-			<div class="submit-c"> <a href=""> <button id="btn-settings"></button> </a> </div>
+			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
+			<div class = "gap"><a href="./pages/login.html"> <button id="btn-login"></button> </a> </div>
+			<div class = "gap"><a href="./pages/signup.html"> <button id="btn-signup"></button> </a> </div>
+			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
+			<div class = "gap"><a href="./pages/feed.html"><button id="btn-later"></button></a></div>
+			<div class = "gap"><a href="./pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><button id="btn-settings" onclick=""></button></div>
 		</div>
 
 		<!-- /* lllllllllllllllllllllllllllll */ -->
@@ -35,46 +55,129 @@
 				</div>
 				<div id = "feed_text"></div>
 			</div>
+
 			<div class="feed_container">
 				<!-- <div class="card card_create"> -->
 				<div class="card card_small"><button id="add" onclick="open_popup()"></button></div>
 				<div class="card card_large"> 
-					<p class = "title_img">Must visit Bohol!</p>
-					<img src="../img/places/Bohol.jpeg" alt="" class="place_img img_large" onclick="popup()"> 
-					<p class = "text_desc">text</p>
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,0,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
 				</div>
 				<div class="card card_medium">
-					<p class = "title_img">text</p>
-					<img src="../img/places/Batanes.jpeg" alt="" class="place_img img_med">
-					<p class = "text_desc">text</p>
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/CDC.jpg" alt="" id="pimg" onclick="see_more(this.src,1,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
 				</div>
 				<div class="card card_large">
-					<p class = "title_img">text</p>
-					<img src="../img/places/Bataan death march.jpeg" alt="" class="place_img img_large"> 
-					<p class = "text_desc">text</p>
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,2,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
 				</div>
 				<div class="card card_small">
-					<p class = "title_img">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<img src="../img/places/Banaue.jpeg" alt="" class="place_img img_small"> 
-					<p class = "text_desc">text</p>
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/KoreanTown.jpeg" alt="" id="pimg" onclick="see_more(this.src,3,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
 				</div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,4,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,5,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,6,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+				
+				</div>
+				<div class="card card_small">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,7,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_medium">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,8,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
 		
-				<div class="card card_small"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
-				<div class="card card_large"></div>
-		
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
+				<div class="card card_small">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,9,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_large">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,10,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_small">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,11,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+				<div class="card card_medium">
+
+					<p class = "Ftitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,12,window.location)" class="img_large" > 
+					</a>
+					<p class = "Ftext_desc">text</p>
+
+				</div>
+
 				
 				
 			</div> 

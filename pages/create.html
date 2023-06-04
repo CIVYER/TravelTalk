@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TravelTalk - Create</title>
+	<link rel="stylesheet" type="text/css" href="../css/create.css">
+
+</head>
+<body>
+
+	<div  class="pop-c" id="popup"></div>
+	<div class="main-c">
+
+	<div class="container">
+<!-- ####################### -->
+	<div class="header">
+	<div class = "gap menu"><a href=""> <button id="btn-menu"></button> </a> </div>
+	<div class = "gap"><a href="./pages/login.html"> <button id="btn-login"></button> </a> </div>
+	<div class = "gap"><a href="./pages/signup.html"> <button id="btn-signup"></button> </a> </div>
+	<div class = "gap logo"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
+	<div class = "gap"><a href="./pages/feed.html"><button id="btn-later"></button></a></div>
+	<div class = "gap"><a href="./pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
+	<div class = "gap settings"><a href=""> <button id="btn-settings"></button> </a> </div>
+	</div>
+
+<!-- ####################### -->
+
+<section class="body">
+	<div class= content>
+
+	<div class="all-text-c">
+			<div class="title-box">
+			<label for="" id="title-text">Title:</label>
+			<input type="text" class="InputTitle">
+		</div>
+	
+	<div class="nc-text-c">
+			<label for="" id ="type-text">Type:</label>	
+			<input type="text" class="Input" list="TypeList">
+			<datalist id="TypeList">
+				<option value="Food and Cuisine">
+				<option value="Accommodation">
+				<option value="Destinations">
+				<option value="Activities and Attractions">
+				<option value="Transportation: ">
+				<option value="Budget Travel">
+				<option value="Travel Photography">
+				<option value="Solo Travel">
+				<option value="Family Travel">
+				<option value="Adventure Travel">
+				<option value="Cultural Experiences">
+			</datalist>
+		</div>
+	<div class="nc-text-c">
+			<label for="" id="type-text">Date:</label>
+			<input type="date" class="Input">
+		</div>
+	<div class="nc-text-c">
+			<label for="" id="type-text">Country&nbspand&nbspPlace:</label>
+			<input type="text" class="Input">
+		</div>
+
+		<div class="hashtag nc-text-c">
+			<label for="" id ="type-text">Hashtags:</label>	
+			<input type="text" class="Inputs" list="hashtagList">
+			<input type="text" class="Inputs" list="hashtagList">
+			<input type="text" class="Inputs" list="hashtagList">
+			<input type="text" class="Inputs" list="hashtagList">
+			
+				<datalist id="hashtagList">
+    				<option value="#Travel">
+    				<option value="#Wanderlust">
+    				<option value="#Explore">
+   					<option value="#Adventure">
+					<option value="#BucketList">
+    				<option value="#TravelBlogger">
+    				<option value="#TravelInspiration">
+   					<option value="#SoloTravel">
+					<option value="#FamilyTravel">
+    				<option value="#BeachLife">
+    				<option value="#Cityscape">
+   					<option value="#NatureLover">
+					<option value="#RoadTrip">
+    				<option value="#TravelAddict">
+    				<option value="#TravelGoals">
+   					<option value="#TravelTips">
+					<option value="#TravelDiaries">
+    				<option value="#ItsMoreFunInThePhilippines">
+   					<option value="#ChoosePhilippines">
+					<option value="#ExplorePhilippines">
+    				<option value="#PinoyTravel">
+    				<option value="#Nature">
+   					<option value="#Relax">
+					<option value="#Relaxmode">
+    				<option value="#PhilippinesIslands">
+    				<option value="#BeautifulDestinationsPH">
+   					<option value="#PinoyPride">
+					<option value="#FoodTripPH">
+					<option value="#IlovePhilippines">
+				</datalist>
+		</div>
+
+		<div class="nc-text-c">
+			<label for="" id="type-text">Links:</label>
+			<input type="url" class="Input">
+			<input type="url" class="Input">
+		</div>
+		
+		<div class="nc-text-c">
+			<label for="" id="type-text">Price&nbspRange:</label>
+			<input type="text" class="width"><h1 id = "range">-</h1><input type="text" type="number" class="width">
+		</div>
+
+		<div class = "nc-text-c">
+			<label for="" id="type-text">Rating:</label>
+		<div class="igap rating">
+			<input value="star-1" name="star-radio" id="star-1" type="radio">
+			<label for="star-1">
+			  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+			</label>
+			<input value="star-1" name="star-radio" id="star-2" type="radio">
+			<label for="star-2">
+			  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+			</label>
+			<input value="star-1" name="star-radio" id="star-3" type="radio">
+			<label for="star-3">
+			  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+			</label>
+			<input value="star-1" name="star-radio" id="star-4" type="radio">
+			<label for="star-4">
+			  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+			</label>
+			<input value="star-1" name="star-radio" id="star-5" type="radio">
+			<label for="star-5">
+			  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+			</label>
+		  </div>
+		  </div>
+
+	<div class="notepad">
+		<div contenteditable="true" id="text-area" class="text-area" placeholder="Write here..."></div>
+	</div>
+</section>
+</div>
+	</div>
+	<script src="../js/imageupload.js"></script>
+	<!-- <script src="../js/popup.js"></script> -->
+</body>
+<footer>
+	<button class = "btn-image" onclick="uploadImage()"></button>
+	<button class = "btn-check" onclick="open_popup_posted()"></button>
+
+
+</footer>
+</html>
+

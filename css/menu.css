@@ -1,0 +1,121 @@
+/* lllllllllllllllllllll */
+.menu-c{
+	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+	z-index: 2;
+	display: flex;
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	position: fixed;
+	transition: all 1s;
+	visibility: hidden;
+	transform: translate(-100%, 0%);
+	flex-direction: column;
+	gap: 1em;
+	padding: 1em;
+}
+
+.menu-show{
+	transform: translate(0%, 0%);
+	visibility: visible;
+}
+.menu-close{
+	background-image: url(../img/menu.png);
+	background-size: contain;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+	width: 3em;
+	height: 3em;
+	align-self: flex-end;
+}
+.menu-content{
+	background-color: rgba(0, 0, 0, 0);
+	/* border-bottom: 1px solid #353e62; */
+	box-shadow: 0px 1px 1px 0px rgba(45, 26, 97, 0.6);
+	height: 3.3em;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	transition: all 1s;
+}
+
+.menu-content:hover{
+	background-color: lightgray;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: .5em;
+	gap: 1em;
+	background-color: white;
+	height: 3em;
+	width: 3em;
+	z-index: 3;
+	right: 3.8em;
+	top: 1em;
+	transition: all .5s;
+	visibility: collapse;
+	transform: scale(0);
+	
+}
+
+.visibi{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: .5em;
+	gap: 1em;
+	background-color: white;
+	height: 10em;
+	width: 5em;
+	z-index: 3;
+	right: 3.8em;
+	top: 1em;
+	transform: scale(1);
+	visibility: visible;
+}
+.drop-con{
+	box-shadow: 0px 1px 1px 0px rgba(45, 26, 97, 0.6);
+	width: max-content;
+	text-align: center;
+}
+
+#btn-setting{
+	height: 4rem;
+	width: 4rem;
+
+	background-image: url(../img/settings.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+
+}
+
+.btn-settings{
+	transition: all 1s;
+	transform: scale(1);
+}
+.invis{
+	transform: scale(0);
+	visibility: hidden;
+}

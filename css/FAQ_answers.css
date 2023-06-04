@@ -1,0 +1,140 @@
+body, html, .container{
+	height: 100%;
+}
+@font-face{
+	font-family: "more-sugar-thin";
+	src: url("../fonts/MoreSugar-Regular.otf");
+	}
+
+body{
+	font-family: "more-sugar-thin";
+	color: #353e62;
+	background-image: url(../img/BgAbout.png);
+	background-size:auto-scale;
+	background-repeat: no-repeat;
+	background-position: center;
+    margin: 0;
+    font-size: 25px;
+    padding: 50px;
+}
+.title{
+	font-size: 50px;
+	text-align: center;
+	color: #7484C4;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #353e62;
+}
+.container1 {
+/*  padding: 10px;*/
+}
+
+.container2 {
+/*  padding: 10px;*/
+  
+}
+.container3{
+/*	padding: 10px;*/
+}
+.container1 img {
+	z-index: 1;
+	position: absolute;
+	top: 1px;
+	bottom: 5000px;
+	right: 1px;
+	width: 1300px;
+	height: 1000px;
+  margin: 0;
+}
+
+.container2 img {
+	z-index: 1;
+	position: absolute;
+  top: 01px;
+	bottom:50px;
+	right: 0;
+	width: 1300px;
+	height: 1000px;
+  margin: 0;
+}
+
+/* llllllllllllll */
+
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 87.1% 13%;
+  	grid-auto-flow: row dense;
+	box-sizing: border-box;
+}
+
+/* llllllllllllll */
+
+.header{
+	/* grid-area: header; */
+
+	display: flex;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	gap: 1em;
+
+	background-color: #7484C4;
+	padding: .3em;
+
+}
+.logo-c{
+	flex: 1;
+}
+#img-logo{
+	height: 4rem;
+}
+#btn-logo{
+	background-image: url(../img/logo.png);
+	background-position: l;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	}
+#btn-settings{
+	height: 4rem;
+	width: 5rem;
+
+	background-image: url(../img/settings.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+#btn-back{
+height: 4rem;
+	width: 5rem;   
+	background-image: url(../img/btn-back.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer; 
+}
+#btn-Faqs{
+	background-image: url(../img/Faqs.png);
+	position: sticky;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 0;
+	height: 4em;
+	width: 13em;
+	cursor: pointer;
+}
+/* llllllllllllll */
+
+
+
+/* llllllllllllll */
