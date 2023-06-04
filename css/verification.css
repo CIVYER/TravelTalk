@@ -18,15 +18,24 @@ body{
 /* llllllllllllll */
 
 .inp{
-    border-top: 0;
     outline: 0;
+    border: 0;
     background-color: transparent;
-    border-left: 0;
-    border-right: 0;
-    border-bottom-style: dashed;
-    border-color: black;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
+}
+#dash{
+    font-family: "more-sugar-regular";
+    outline: 0;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #353e62;
+    color: #353e62;
+    border-radius: 4px;
+    margin-right: 5px;
 }
 
 /* llllllllllllll */
@@ -42,8 +51,7 @@ body{
 
 .title_ver{
     font-family: more-sugar-regular;
-    font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
     color: #7484C4;
     -webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #353e62;
@@ -55,23 +63,58 @@ body{
     text-align: center;
     font-size: 30px;
 	height: max-content;
+    display: flex;
+    flex-direction: column;
+
 }
 .resend{
+    font-size: 25px;
 	height: max-content;
+    padding: 50px;
 }
 .user_dp{
     text-align: center;
 }
 #img-dp{
     /* object-fit: contain; */
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
 }
-.save-btn{
+.submit-btn{
+    position: absolute;
+    bottom: 0;
 	align-self: flex-end;
 	object-fit: contain;
+    padding: 50px;
+    cursor: pointer;
 }
-#save-btn{
+#submit-btn{
 	height: 4em;
 	padding: 0em 2em 0em 0em;
+}
+
+.pop-c{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: -11em;
+	right: -20em;
+	height: 60%;
+	width: 50%;
+	background-image: url(../img/pop-sign.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	z-index: 100;
+	transform: scale(.1);
+	transition:bottom 1s, right 1s, transform 1s;
+	transition-timing-function: ease;
+	visibility: hidden;
+}
+
+.openpop{
+	transform: scale(1);
+	visibility: visible;
+	bottom: 0;
+	right: -11em;
 }

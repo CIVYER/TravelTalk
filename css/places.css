@@ -9,7 +9,7 @@
 }
 
 :root {
-	--card_width: 250px;
+	--card_width: 310px;
 	--card_border_radius: 16px;
 	--row_increment: 10px;
 	--card_small: 36;
@@ -103,6 +103,30 @@
 
     text-align: center;
 }
+.utitle_img{
+    font-family: "more-sugar-regular";
+    font-weight: bolder;
+	color: #353e62;
+	font-size: 20px;
+    text-align: center;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+}
+.utext_desc{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: "more-sugar-thin";
+	color: #353e62;
+    width: 80%;
+	font-size:20px;
+
+    text-align: center;
+}
 .title_img{
     font-family: "more-sugar-regular";
     font-weight: bolder;
@@ -112,7 +136,7 @@
     height: auto;
     text-overflow: ellipsis;
     overflow: hidden;
-    
+    width: 80%;
 }
 .text_desc{
     text-overflow: ellipsis;

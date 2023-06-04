@@ -18,7 +18,6 @@ body{
 	src: url("../fonts/MoreSugar-Thin.otf");
 }
 
-
 .main-c{
     height: 80%;
     width: 90%;
@@ -26,11 +25,12 @@ body{
     gap: 3em;
 }
 .left-c{
+    margin: auto;
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
 }
 .user-c{
     height: 20%;
@@ -47,17 +47,23 @@ body{
     background-color: #D9CFF8;
     height: 80%;
     border-radius: 25px;
+    overflow-y: scroll;
+    text-align: left;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; 
+    padding: 20px;
+    margin:0;
 }
+
 #see{
+    align-self: center;
     object-fit: contain;
     width: 90%;
     border-radius: 25px;
 }
 .right-c{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #D9CFF8;
     height: 100%;
     width: 90%;
@@ -68,7 +74,9 @@ body{
 }
 #desc{
     margin: auto;
-    padding: 1.5em;
+}
+.desc-wrap{
+    margin: auto;
 }
 .desc-c{
     color: #353e62;
@@ -81,12 +89,12 @@ body{
     text-align: center;
     font-size: 10px;
     text-overflow: ellipsis;
-    padding: 0em 2em 0em 2em;   
+    padding: 0em 5em 0em 5em;   
     font-family: more-sugar-thin; 
     white-space: pre-wrap;
 }
 .x-c{
-    position: fixed;
+    position: absolute;
     top: 2.5em;
     right: 2.5em;
     align-self: flex-start;
@@ -106,3 +114,90 @@ body{
 #username{
     font-family: more-sugar-thin;
 }
+
+.rating {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 0.3rem;
+	--stroke: #353e62;
+	--fill: #333952;
+  }
+  
+  .rating input {
+	appearance: unset;
+  }
+  
+  .rating svg {
+	width: 2rem;
+	height: 2rem;
+	overflow: visible;
+	fill: transparent;
+	stroke: var(--stroke);
+	stroke-linejoin: bevel;
+	stroke-dasharray: 12;
+	animation: idle 4s linear infinite;
+	transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+	from {
+	  stroke-dashoffset: 24;
+	}
+  }
+  
+  .rating label:hover svg {
+	stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+	transition: 0s;
+	animation: idle 4s linear infinite, yippee 0.75s backwards;
+	fill: var(--fill);
+	stroke: var(--fill);
+	stroke-opacity: 0;
+	stroke-dasharray: 0;
+	stroke-linejoin: miter;
+	stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+	0% {
+	  transform: scale(1);
+	  fill: var(--fill);
+	  fill-opacity: 0;
+	  stroke-opacity: 1;
+	  stroke: var(--stroke);
+	  stroke-dasharray: 10;
+	  stroke-width: 1px;
+	  stroke-linejoin: bevel;
+	}
+  
+	30% {
+	  transform: scale(0);
+	  fill: var(--fill);
+	  fill-opacity: 0;
+	  stroke-opacity: 1;
+	  stroke: var(--stroke);
+	  stroke-dasharray: 10;
+	  stroke-width: 1px;
+	  stroke-linejoin: bevel;
+	}
+  
+	30.1% {
+	  stroke: var(--fill);
+	  stroke-dasharray: 0;
+	  stroke-linejoin: miter;
+	  stroke-width: 8px;
+	}
+  
+	60% {
+	  transform: scale(1.2);
+	  fill: var(--fill);
+	}
+  }
+
+  .igap{
+    text-align: center;
+    padding: 0px  35px;
+    padding-top: 10px;
+  }

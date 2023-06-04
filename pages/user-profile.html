@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelTalk - User Profile</title>
+	<link rel="stylesheet" href="../css/feed.css">
+	<link rel="stylesheet" href="../css/places.css">
     <link rel="stylesheet" href="../css/user-profile.css">
 	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/places.css">
     <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
@@ -27,11 +30,11 @@
 	</div>
     <div class="container">
         <!-- ####################### -->
-		<div class="header">
+		<div class="headers">
 			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
 			<div class = "gap"><a href="../pages/login.html"> <button id="btn-login"></button> </a> </div>
 			<div class = "gap"><a href="../pages/signup.html"> <button id="btn-signup"></button> </a> </div>
-			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
+			<div class = "gap"><a href="./feed.html"> <button id="btn-logo"></button> </a> </div>
 			<div class = "gap"><a href="../pages/feed.html"><button id="btn-later"></button></a></div>
 			<div class = "gap"><a href="../pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
 			<div class = "gap"><button id="btn-settings" onclick="setti()"></button></div>
@@ -41,7 +44,7 @@
         <div class="center_body">
             <div class="uprof-c">
                 <div class="btn-c">
-                    <a href="../pages/feed.html"><img src="../img/btn-back.png" alt="" id="btn-back"></a>
+                    <img src="../img/btn-back.png" alt="" id="btn-back" onclick="lastpage()">
                 </div>
                 <img src="../img/dp&username.png" alt="" id="uprof">
                 <div class="all-text-c">
@@ -69,33 +72,48 @@
             </div>
 			<div class="feed_container">
 				<!-- <div class="card card_create"> -->
-				<div class="card card_small"><a href=""> <button id="add"></button> </a></div>
-				<div class="card card_large"></div>
-				<div class="card card_medium"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
-		
-				<div class="card card_small"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
-				<div class="card card_large"></div>
-		
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_large"></div>
-				<div class="card card_small"></div>
-				<div class="card card_medium"></div>
+				<a href="../pages/create.html"><div class="card card_small"><button id="add"></button></div></a>
+				<div class="card card_large"> 
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,1,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+				<div class="card card_medium">
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/CDC.jpg" alt="" id="pimg" onclick="see_more(this.src,11,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,15,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+				<div class="card card_small">
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/KoreanTown.jpeg" alt="" id="pimg" onclick="see_more(this.src,20,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
 			</div> 
         </div>
 
         <!-- ####################### -->
-        <div class="footer">
+        <div class="footers">
             <div class="baggage-c"> <img src="../img/baggage.png" id="img-baggage"> </div>
             <div class="about-c"><a href="../pages/about-us.html"><button id="btn-about"></button></a></div>
             <div class="nature-c"> <img src="../img/nature.png" id="img-nature"> </div>

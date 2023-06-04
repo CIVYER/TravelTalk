@@ -8,21 +8,32 @@
 	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
 </head>
 <body>
+    
+	<div class="pop-c" id="popup"></div>
+	<div class="main-c">
 
         <div class="center_body">
             <div class = "title_ver"><p>VERIFY YOUR ACCOUNT</p></div>
 
             <div class="user_dp"><img src="../img/dp_nt.png" id="img-dp"></div>
 
-            <div class = "content"><p>Please enter the four(4) digit code sent to the phone number/email you've input.</p></div>
-            <input type="text" class="inp" >
+            <div class = "content">
+                <p>Please enter the four(4) digit code sent to the phone number/email you've input.</p>
+            <div>
+                <input type="text" id ="dash" maxlength="1" />
+                <input type="text" id ="dash" maxlength="1" />
+                <input type="text" id ="dash" maxlength="1" />
+                <input type="text" id ="dash" maxlength="1" />
+            </div>
+           </div>
+           
             <div class ="content resend"> <a href=""><p><u>Resend code</u></p></a></div>
 
-            <div class="save-btn"> <a href="../pages/login.html"> <img src="../img/save-btn.png" id="save-btn"> </a> </div>
+            <div class="submit-btn" onclick="open_popup_sign()"> <img src="../img/submit.png" id="submit-btn"> </div>
             <!-- <div class="save-btn"> <a href=""> <button id="save-btn"></button> </a> </div> -->
         </div>
 
         <!-- ####################### -->
-        
+        <script src="../js/imageupload.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ body{
 	--card_small: 36;
 	--card_medium: 43;
 	--card_large: 55;
-	--card_height:500px;
+	--card_height:600px;
 }
 /* lllllllllllllllllllllllllllll */
 
@@ -257,7 +257,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
 } 
 .card {

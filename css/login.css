@@ -2,7 +2,6 @@ body, html, .container{
 	height: 100%;
 }
 body{
-
 	margin: 0px;
 }
 @font-face{
@@ -82,7 +81,6 @@ body{
 	padding-top: 1em;
 }
 #btn-login{
-	
 	background-size: contain;
 	background-position: center;
 	background-color: transparent;
@@ -90,10 +88,11 @@ body{
 	border: 0;
 }
 .text-si{
-	width: 16.5rem;
+	width: 15rem;
 	text-align: center;
 	font-family: "more-sugar-thin";
-	color: black;
+	font-size: 15px;
+	color: #353e62;
 	text-decoration: none;
 }
 #btn-signup{

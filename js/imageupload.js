@@ -4,7 +4,12 @@ function open_popup_posted(){
   popup.classList.add("openpop");
 }
 
-function uploadImage() {
+function open_popup_sign(){
+  setTimeout(function() {window.location.assign("../pages/feed.html")}, 2000);
+  popup.classList.add("openpop");
+}
+
+function uploadImage(){
 		  
     var fileInput = document.createElement('input');
     fileInput.type = 'file';
