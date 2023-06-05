@@ -214,3 +214,13 @@ button{
 .visibi{
 	height: 10em;
 }
+
+.extra{
+	height: auto;
+	width: 35em;
+	
+	position: absolute;
+	object-fit: contain;
+	top: 15vh;
+	right: 0;
+}

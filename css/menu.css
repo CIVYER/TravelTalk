@@ -142,7 +142,14 @@ a {
 	visibility: hidden;
 }
 
-
+.bp-con{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+.pen_ed{
+	cursor: pointer;
+}
 .bookmark {
 	display:none;
 	cursor: pointer;
@@ -155,8 +162,7 @@ a {
 	height: 3em;
 	width: 3em;
 	display:inline-block;
-	margin-left: 2em;
-	margin-bottom: 2.5em;
+
 	cursor: pointer;
 }
 
@@ -191,8 +197,6 @@ a {
 	background-repeat: no-repeat;
 	height: 3em;
 	width: 3em;
-	margin-left: 2em;
-	margin-bottom: 2.5em;
 	display:inline-block;
 	cursor: pointer;
 }

@@ -11,6 +11,7 @@ body, html, .container{
 	src: url("../fonts/MoreSugar-Thin.otf");
 }
 body{
+	height: 105%;
 	background-image: url(..//img/On-train.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -23,7 +24,7 @@ body{
 	font-size: 20px;
 	padding-left: 7em;
     font-family: more-sugar-regular;
-	width: 32em;
+	width: 100%;
 }
 
 .search-text-container{
@@ -101,12 +102,13 @@ color: #B391FE;
 -webkit-text-stroke-color: #353E62;
 font-size: 60px;
 padding: 0;
-padding-top: 0.5em;
 }
 
 /* llllllllllllll */
 
 .container{
+	z-index: 2009;
+
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: auto 87.1% 13%;
