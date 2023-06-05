@@ -10,23 +10,30 @@
 </head>
 <body>
 	<div id="pop-m" class="menu-c">
-		<button class="menu-close" onclick="menu_close()"></button>
-		<a href="../pages/about-us.html"><div class="menu-content"><div>About Us</div></div></a>
-		<a href="../pages/login.html"><div class="menu-content"><div>Login</div></div></a>
-		<a href="../pages/signup.html"><div class="menu-content"><div>Signup</div></div></a>
-		<a href="../pages/FAQ.html"><div class="menu-content"><div>FAQ'S</div></div></a>
-		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
-		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
-		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<div class="content-c">
+			<a href="../main.html">
+				<div class="menu-header">
+					<img src="../img/logo.png" alt="" id="menu-logo">
+				</div>
+			</a>
+			Account:
+			<a href="../pages/login.html"><div class="menu-content"><div>Login</div></div></a>
+			<a href="../pages/signup.html"><div class="menu-content"><div>Signup</div></div></a>
+			Navigate:
+			<a href="../pages/later.html"><div class="menu-content"><div>Feed</div></div></a>
+			Tools:
+			<a href="../pages/about-us.html" onclick="see_more(null,null,window.location.origin + '/main.html')"><div class="menu-content"><div>About Us</div></div></a>
+			<a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/main.html')"><div class="menu-content"><div>FAQ'S</div></div></a>
+		</div>
 	</div>
 	<div  class="pop-c" id="popup"></div>
 	<div class="container">
 		<div class="header">
 			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
-			<div class = "gap text-si"><p id="btn-login"> <a class = "text-si" href="../pages/signup.html"><u>Don't have an account?</u></a></p></div>
+			<div class = "gap text-si"><p id="btn-login"> <a class = "text-si" href="../pages/signup.html"><u>Don't have an account? Click Here!!</u></a></p></div>
 			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
 			<div class = "gap"><a href="../pages/later.html"><button id="btn-later"></button></a></div>
-			<div class = "gap"><a href="./pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/main.html')"> <button id="btn-help"></button> </a> </div>
 			<div class = "gap"><button id="btn-settings"></button></div>
 		</div>
 

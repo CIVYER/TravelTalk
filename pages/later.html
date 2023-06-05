@@ -17,14 +17,19 @@
 		<a href="../pages/login.html"><div class="drop-con">Saved Post</div></a>
 	</div>
 	<div id="pop-m" class="menu-c">
-		<button class="menu-close" onclick="menu_close()"></button>
-		<a href="../pages/about-us.html"><div class="menu-content"><div>About Us</div></div></a>
-		<a href="../pages/user-profile.html"><div class="menu-content"><div>Profile</div></div></a>
-		<a href="../pages/saved-post.html"><div class="menu-content"><div>Saved Post</div></div></a>
-		<a href="../pages/FAQ.html"><div class="menu-content"><div>FAQ'S</div></div></a>
-		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
-		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
-		<a href=""><div class="menu-content"><div>buttuuuun</div></div></a>
+		<a href="../main.html">
+			<div class="menu-header">
+				<img src="../img/logo.png" alt="" id="menu-logo">
+			</div>
+		</a>
+		Account:
+		<a href="../pages/login.html"><div class="menu-content"><div>Login</div></div></a>
+		<a href="../pages/signup.html"><div class="menu-content"><div>Signup</div></div></a>
+		Navigate:
+		<a href="../pages/later.html"><div class="menu-content"><div>Feed</div></div></a>
+		Tools:
+		<a href="../pages/about-us.html" onclick="see_more(null,null,window.location.origin + '/main.html')"><div class="menu-content"><div>About Us</div></div></a>
+		<a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/main.html')"><div class="menu-content"><div>FAQ'S</div></div></a>
 	</div>
 	<div class="main-c">
 
@@ -36,7 +41,7 @@
 			<div class = "gap"><a href="./pages/signup.html"> <button id="btn-signup"></button> </a> </div>
 			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
 			<div class = "gap"><a href="./pages/feed.html"><button id="btn-later"></button></a></div>
-			<div class = "gap"><a href="./pages/FAQ.html"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/main.html')"> <button id="btn-help"></button> </a> </div>
 			<div class = "gap"><button id="btn-settings" onclick=""></button></div>
 		</div>
 
@@ -63,7 +68,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,0,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,0,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -72,7 +77,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/CDC.jpg" alt="" id="pimg" onclick="see_more(this.src,1,window.location)" class="img_large" > 
+					<img src="../img/places/CDC.jpg" alt="" id="pimg" onclick="see_more(this.src,1,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -81,7 +86,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,2,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,2,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -90,7 +95,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/KoreanTown.jpeg" alt="" id="pimg" onclick="see_more(this.src,3,window.location)" class="img_large" > 
+					<img src="../img/places/KoreanTown.jpeg" alt="" id="pimg" onclick="see_more(this.src,3,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -99,7 +104,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,4,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,4,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -108,7 +113,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,5,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,5,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -117,7 +122,7 @@
 					
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,6,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,6,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 				
@@ -126,7 +131,7 @@
 
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,7,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,7,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 
@@ -135,7 +140,7 @@
 
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,8,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,8,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 
@@ -145,7 +150,7 @@
 
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,9,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,9,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 
@@ -154,7 +159,7 @@
 
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,10,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,10,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 
@@ -163,7 +168,7 @@
 
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,11,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,11,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 
@@ -172,7 +177,7 @@
 
 					<p class = "Ftitle_img"></p>
 					<a href="../pages/seemore.html" class="place_img" >
-					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,12,window.location)" class="img_large" > 
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,12,window.location.origin + '/main.html')" class="img_large" > 
 					</a>
 					<p class = "Ftext_desc">text</p>
 

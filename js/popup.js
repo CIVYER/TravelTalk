@@ -117,6 +117,7 @@ function see_more(seemore, num ,lastpage) {
     localStorage.setItem("country", country[num]);
     localStorage.setItem("rating", ratings[num]);
     localStorage.setItem("lastpage", lastpage);
+
 }
 
 function change_pic() {
@@ -149,8 +150,9 @@ function change_pic() {
     else if (rating == 1) {
         r1[4].checked = true;
     }
-    console.log(localStorage.getItem("lastpage"));
 }
+
+console.log(localStorage.getItem("lastpage"));
 function lastpage() {
     var update_lastpage = localStorage.getItem("lastpage");
 

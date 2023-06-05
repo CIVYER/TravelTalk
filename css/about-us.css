@@ -45,6 +45,9 @@ body{
 	background-color: #EEF4F6;
 
 }
+/* .gap{
+	color: peachpuff;
+} */
 .logo{
 	padding-top: 1em;
 }
@@ -104,13 +107,11 @@ body{
 	width: 3rem;
 
 	
-	background-image: url(../img/menu.png);
 	background-size: contain;
 	background-color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 	border: 0;
-	cursor: pointer;
 }
 
 #btn-later{
@@ -128,13 +129,11 @@ body{
 	height: 4rem;
 	width: 4rem;
 
-	background-image: url(../img/settings.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	border: 0;
 	background-color: transparent;
-	cursor: pointer;
 
 }
 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTalk - User Profile</title>
+	<link rel="stylesheet" href="../css/feed.css">
+	<link rel="stylesheet" href="../css/places.css">
+    <link rel="stylesheet" href="../css/user-profile.css">
+	<link rel="icon" href="../img/title_logo.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/places.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+	<div id="drop-visibi" class="dropdown">
+		<button id="btn-setting" onclick="setti()"></button>
+		<a href="../pages/user-profile.html" onclick="see_more(null,null,window.location)"><div class="drop-con">Profile</div></a>
+		<div class="drop-con" style="background-color: #dae4e7;cursor: not-allowed;">My Post</div>
+		<a href="../pages/saved-post.html" class="drop-con"><div class="drop-con">Saved Post</div></a>
+		<a href="../main.html"><div class="drop-con">Logout</div></a>
+	</div>
+	<div id="pop-m" class="menu-c">
+		<div class="content-c">
+			<a href="../main.html">
+				<div class="menu-header">
+					<img src="../img/logo.png" alt="" id="menu-logo">
+				</div>
+			</a>
+			Account:
+			<a href="../pages/user-profile.html"><div class="menu-content"><div>Profile</div></div></a>
+			<a href="../pages/login.html"><div class="menu-content"><div>Logout</div></div></a>
+			Navigate:
+			<a href="../pages/feed.html"><div class="menu-content"><div>Feed</div></div></a>
+			<a href="../pages/my-post.html"><div class="menu-content"><div>My Post</div></div></a>
+			<a href="../pages/saved-post.html"><div class="menu-content"><div>Saved Post</div></div></a>
+			Tools:
+			<a href="../pages/create.html"><div class="menu-content"><div>Create Post</div></div></a>
+			<a href="../pages/about-us.html" onclick="see_more(null,null,window.location.origin + 'pages/feed.html')"><div class="menu-content"><div>About Us</div></div></a>
+			<a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/pages/feed.html')"><div class="menu-content"><div>FAQ'S</div></div></a>
+		</div>
+	</div>
+    <div class="container">
+        <!-- ####################### -->
+		<div class="headers">
+			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
+			<div class = "gap"><a href=""> <button id="btn-login"></button> </a> </div>
+			<div class = "gap"><a href=""> <button id="btn-signup"></button> </a> </div>
+			<div class = "gap"><a href="../pages/feed.html"> <button id="btn-logo"></button> </a> </div>
+			<div class = "gap"><a href="../pages/feed.html"><button id="btn-later"></button></a></div>
+			<div class = "gap"><a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/pages/feed.html')"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><button id="btn-settings"></button></div>
+		  </div>
+        <!-- ####################### -->
+
+        <div class="center_body">
+            <div class="uprof-c">
+                <div class="btn-c">
+                    <img src="../img/btn-back.png" alt="" id="btn-back" onclick="lastpage()">
+                </div>
+                <img src="../img/dp&username.png" alt="" id="uprof">
+                <div class="all-text-c">
+                    <div class="text-c">
+                        <label for="" class="name-txt">Name:</label>
+                        <input type="text" class="all-inp white">
+                        <img src="../img/pen.png" alt="" class="pen">
+                    </div>
+                    <div class="nc-text-c">
+                        <label for="" class="name-txt">Likes:</label>
+                        <input type="text" class="all-inp">
+                        <img src="../img/pen.png" alt="" class="pen">
+                    </div>
+                    <div class="nc-text-c">
+                        <label for="" class="name-txt">Favorites:</label>
+                        <input type="text" class="all-inp">
+                        <img src="../img/pen.png" alt="" class="pen">
+                    </div>
+                    <div class="nc-text-c">
+                        <label for="" class="name-txt">Activities:</label>
+                        <input type="text" class="all-inp">
+                        <img src="../img/pen.png" alt="" class="pen">
+                    </div>
+                </div>
+            </div>
+			<div class="feed_container">
+				<!-- <div class="card card_create"> -->
+				<a href="../pages/create.html"><div class="card card_small"><button id="add"></button></div></a>
+				<div class="card card_large"> 
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,1,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+				<div class="card card_medium">
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/CDC.jpg" alt="" id="pimg" onclick="see_more(this.src,11,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+				<div class="card card_large">
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/Morong, Beach.jpeg" alt="" id="pimg" onclick="see_more(this.src,15,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+				<div class="card card_small">
+					
+					<p class = "utitle_img"></p>
+					<a href="../pages/seemore.html" class="place_img" >
+					<img src="../img/places/KoreanTown.jpeg" alt="" id="pimg" onclick="see_more(this.src,20,window.location)" class="img_large" > 
+					</a>
+					<p class = "utext_desc">text</p>
+				
+				</div>
+			</div> 
+        </div>
+
+        <!-- ####################### -->
+        <div class="footers">
+            <div class="baggage-c"> <img src="../img/baggage.png" id="img-baggage"> </div>
+            <div class="about-c"><a href="../pages/about-us.html"><button id="btn-about"></button></a></div>
+            <div class="nature-c"> <img src="../img/nature.png" id="img-nature"> </div>
+        </div>
+        <!-- ####################### -->
+    </div>
+    <script src="../js/popup.js"></script>
+</body>
+</html>

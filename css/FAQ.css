@@ -100,7 +100,7 @@ color: #B391FE;
 -webkit-text-stroke-color: #353E62;
 font-size: 60px;
 padding: 0;
-padding-top: 1em;
+padding-top: 0.5em;
 }
 
 /* llllllllllllll */
@@ -194,13 +194,11 @@ padding-top: 1em;
 	width: 3rem;
 
 	
-	background-image: url(../img/menu.png);
 	background-size: contain;
 	background-color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 	border: 0;
-	cursor: pointer;
 
 }
 
@@ -219,13 +217,11 @@ padding-top: 1em;
 	height: 4rem;
 	width: 4rem;
 
-	background-image: url(../img/settings.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	border: 0;
 	background-color: transparent;
-	cursor: pointer;
 
 }
 
@@ -278,6 +274,16 @@ padding-top: 1em;
 #img-nature{
 	height: 4em;
 	width: 5em;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+#ASK{
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
 }
 
 /* llllllllllllll */

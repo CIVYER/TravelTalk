@@ -44,8 +44,7 @@ body{
 	padding-top: 1em;
 }
 #btn-login{
-	height: 2rem;
-	width: 4rem;
+
 	
 	background-size: contain;
 	background-position: center;
@@ -55,8 +54,7 @@ body{
 }
 
 #btn-signup{
-	height: 2rem;
-	width: 5rem;
+
 
 	background-size: contain;
 	background-position: center;
@@ -65,7 +63,14 @@ body{
 	border: 0;
 
 }
-
+.text-si{
+	width: 15rem;
+	text-align: center;
+	font-family: "more-sugar-thin";
+	font-size: 15px;
+	color: #353e62;
+	text-decoration: none;
+}
 #btn-logo{
 	height: 4.5rem;
 	width: 18rem;
