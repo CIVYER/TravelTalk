@@ -15,7 +15,6 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
     margin: 0;
-    font-family: more-sugar-regular;
 /*    font-size: 50px;*/
 }
 
@@ -23,6 +22,8 @@ body{
 	color: #4E5674;
 	font-size: 20px;
 	padding-left: 7em;
+    font-family: more-sugar-regular;
+	width: 32em;
 }
 
 .search-text-container{
@@ -141,6 +142,7 @@ padding-top: 0.5em;
 #btn-login{
 	height: 2rem;
 	width: 4rem;
+	background-image: url(../img/login.png);
 	
 	background-size: contain;
 	background-position: center;
@@ -152,6 +154,7 @@ padding-top: 0.5em;
 #btn-signup{
 	height: 2rem;
 	width: 5rem;
+	background-image: url(../img/signup.png);
 
 	background-size: contain;
 	background-position: center;
@@ -180,6 +183,7 @@ padding-top: 0.5em;
 #btn-help{
 	height: 2rem;
 	width: 5rem;
+	background-image: url(../img/help.png);
 
 	background-size: contain;
 	background-position: center;
@@ -192,6 +196,7 @@ padding-top: 0.5em;
 #btn-menu{
 	height: 1.5rem;
 	width: 3rem;
+	background-image: url(../img/menu.png);
 
 	
 	background-size: contain;
@@ -205,6 +210,7 @@ padding-top: 0.5em;
 #btn-later{
 	height: 2rem;
 	width: 5rem;
+	background-image: url(../img/feed.png);
 
 	background-size: contain;
 	background-position: center;
@@ -216,6 +222,7 @@ padding-top: 0.5em;
 #btn-settings{
 	height: 4rem;
 	width: 4rem;
+	background-image: url(../img/settings.png);
 
 	background-position: center;
 	background-size: contain;
@@ -225,6 +232,9 @@ padding-top: 0.5em;
 
 }
 
+button{
+	cursor: pointer;
+}
 /* llllllllll */
 
 .footer{
@@ -276,7 +286,7 @@ padding-top: 0.5em;
 	width: 5em;
 }
 
-a{
+body + a{
 	text-decoration: none;
 	color: black;
 }

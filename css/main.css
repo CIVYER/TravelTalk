@@ -128,6 +128,8 @@ body{
 	cursor: pointer;
 }
 
+
+
 #btn-settings{
 	height: 4rem;
 	width: 4rem;
@@ -192,42 +194,8 @@ body{
 	}
 }
 footer{	
-
 	background-color: #DDD8C9;
-	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
-}	
-#baggage{
-	grid-area: baggage;
-	background-image: url(../img/baggage.png);
-	width: 100%;
-  	height: 5.313em;
-	background-repeat: no-repeat;
-	background-size: 80px 90px;
-	background-position: left;
-}
-#nature{
-	grid-area: nature;
-	width:100%;
-	height:100%;
-	background-image: url(../img/nature.png);
- 	background-repeat: no-repeat;
-	background-size: 100px 85px ;
-	background-position: right;
-}
-#about_us{
-	grid-area: about_us;
-	background-image: url(../img/about_us.png);
-	background-repeat: no-repeat;
-	background-size: 200px 80px;
-	height: 100%;
-	width: 100%;
-	background-color: transparent;
-	border: 0;
-	cursor: pointer;
-	background-position: center;
-}
-.btn-f{
-	cursor: pointer;
+	
 }
 
 

@@ -10,25 +10,29 @@
 </head>
 <div id="drop-visibi" class="dropdown">
     <button id="btn-setting" onclick="setti()"></button>
-    <a href="../pages/login.html"><div class="drop-con">Profile</div></a>
-    <a href="../pages/login.html"><div class="drop-con">My Post</div></a>
-    <a href="../pages/login.html"><div class="drop-con">Saved Post</div></a>
+    <a href="../pages/user-profile.html" onclick="see_more(null,null,window.location)"><div class="drop-con">Profile</div></a>
+    <a href="../pages/my-post.html" onclick="see_more(null,null,window.location)"><div class="drop-con">My Post</div></a>
+    <a href="../pages/saved-post.html" class="drop-con"><div class="drop-con">Saved Post</div></a>
+    <a href="../main.html"><div class="drop-con">Logout</div></a>
 </div>
 <div id="pop-m" class="menu-c">
     <div class="content-c">
-        <a href="../main.html">
+        <a href="../pages/feed.html">
             <div class="menu-header">
                 <img src="../img/logo.png" alt="" id="menu-logo">
             </div>
         </a>
         Account:
-        <a href="../pages/login.html"><div class="menu-content"><div>Login</div></div></a>
-        <a href="../pages/signup.html"><div class="menu-content"><div>Signup</div></div></a>
+        <a href="../pages/user-profile.html"><div class="menu-content"><div>Profile</div></div></a>
+        <a href="../pages/login.html"><div class="menu-content"><div>Logout</div></div></a>
         Navigate:
-        <a href="../pages/later.html"><div class="menu-content"><div>Feed</div></div></a>
+        <a href="../pages/feed.html"><div class="menu-content"><div>Feed</div></div></a>
+        <a href="../pages/my-post.html"><div class="menu-content"><div>My Post</div></div></a>
+        <a href="../pages/saved-post.html"><div class="menu-content"><div>Saved Post</div></div></a>
         Tools:
-        <a href="../pages/about-us.html" onclick="see_more(null,null,window.location.origin + '/main.html')"><div class="menu-content"><div>About Us</div></div></a>
-        <a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/main.html')"><div class="menu-content"><div>FAQ'S</div></div></a>
+        <a href="../pages/create.html"><div class="menu-content"><div>Create Post</div></div></a>
+        <a href="../pages/about-us2.html" onclick="see_more(null,null,window.location.origin + 'pages/feed.html')"><div class="menu-content"><div>About Us</div></div></a>
+        <a href="../pages/FAQ2.html" onclick="see_more(null,null,window.location.origin + '/pages/feed.html')"><div class="menu-content"><div>FAQ'S</div></div></a>
     </div>
 </div>
 <body>
@@ -36,11 +40,11 @@
         <!-- ####################### -->
 		<div class="header">
 			<div class = "gap space"><button id="btn-menu" onclick="menu()"></button></div>
-			<div class = "gap"><a href="../pages/login.html"> <button id="btn-login"></button> </a> </div>
-			<div class = "gap"><a href="../pages/signup.html"> <button id="btn-signup"></button> </a> </div>
-			<div class = "gap"><a href="../main.html"> <button id="btn-logo"></button> </a> </div>
-			<div class = "gap"><a href="../pages/later.html"><button id="btn-later"></button></a></div>
-			<div class = "gap"><a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/main.html')"> <button id="btn-help"></button> </a> </div>
+			<div class = "gap"><button style="visibility: hidden;" id="btn-login"></button></div>
+			<div class = "gap"><button style="visibility: hidden;" id="btn-signup"></button></div>
+			<div class = "gap"><a href="../pages/feed.html"> <button id="btn-logo"></button> </a> </div>
+			<div class = "gap"><a href="../pages/feed.html"><button id="btn-later"></button></a></div>
+			<div class = "gap"><a href="../pages/FAQ.html" onclick="see_more(null,null,window.location.origin + '/pages/feed.html')"> <button id="btn-help"></button> </a> </div>
 			<div class = "gap"><button id="btn-settings" onclick=""></button></div>
 		</div>
         <!-- ####################### -->
@@ -87,7 +91,7 @@
     </ul>
 
     <ul class = "menu">
-        <li class = "menu_item"><a class = "menu_link" href="../main.html">Home |</a>
+        <li class = "menu_item"><a class = "menu_link" href="../pages/feed.html">Home |</a>
         <li class = "menu_item"><a class = "menu_link" href="../pages/about-us.html">About Us |</a>
             <li class = "menu_item"><a class = "menu_link" href="../pages/FAQ.html">FAQ's |</a>
             </a>

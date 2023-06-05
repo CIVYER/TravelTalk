@@ -2,6 +2,7 @@ body, html, .container{
 	height: 100%;
 }
 body{
+	height: 110%;
 	margin: 0px;
 }
 @font-face{
@@ -24,7 +25,7 @@ body{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
-	z-index: 100;
+	z-index: 2005;
 	transform: scale(.1);
 	transition:bottom 1s, right 1s, transform 1s;
 	transition-timing-function: ease;
@@ -46,7 +47,7 @@ body{
 .container{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: auto 87.1% 13%;
+	grid-template-rows: auto 90%;
   	grid-auto-flow: row dense;
 	box-sizing: border-box;
 }
@@ -58,7 +59,7 @@ body{
 /*llllllllllllllllllllllllllllll*/
 
 .header{
-	z-index: 1;
+	z-index: 2001;
 	max-height: max-content;
 
 	display: flex;
@@ -189,6 +190,8 @@ body{
 /*llllllllllllllllllllllllllllll*/
 
 .center_body{
+	z-index: 2000;
+
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 15% 85%;

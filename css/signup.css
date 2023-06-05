@@ -1,5 +1,5 @@
 html, body, .container{
-    height: 100%;
+    height: auto;
 }
 
 body{
@@ -449,4 +449,8 @@ body{
 #img-nature{
 	height: 4em;
 	width: 5em;
+}
+
+footer{
+	margin-top: 3em;
 }

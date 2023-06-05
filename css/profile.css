@@ -87,6 +87,7 @@ body{
 }
 
 .layout {
+  z-index: 2001;
     display: flex;
     flex-direction: column;
     height: 90%;

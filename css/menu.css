@@ -1,7 +1,7 @@
 /* lllllllllllllllllllll */
 .menu-c{
 	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
-	z-index: 2;
+	z-index: 2002;
 	display: flex;
 	width: 20%;
 	height: 100%;
@@ -141,6 +141,58 @@ a {
 	transform: scale(0);
 	visibility: hidden;
 }
-/* #btn-help{
-	cursor: help;
-} */
+
+
+.bookmark {
+	display:none;
+	cursor: pointer;
+}
+
+.bookmark + label{
+	background-image: url(../img/not_book.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	display:inline-block;
+	margin-left: 2em;
+	margin-bottom: 2.5em;
+	cursor: pointer;
+}
+
+.bookmark:checked + label{
+	background-image: url(../img/clicked_book.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	display:inline-block;
+	cursor: pointer;
+}
+.bookmarks {
+	display:none;
+	cursor: pointer;
+}
+
+.bookmarks:checked + label{
+	background-image: url(../img/not_book.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	display:inline-block;
+
+	cursor: pointer;
+}
+
+.bookmarks + label{
+	background-image: url(../img/clicked_book.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	margin-left: 2em;
+	margin-bottom: 2.5em;
+	display:inline-block;
+	cursor: pointer;
+}

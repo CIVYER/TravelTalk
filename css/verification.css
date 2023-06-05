@@ -1,4 +1,8 @@
+html, body, .center_body{
+    height: 100%;
+}
 body{
+
     margin: 0;
     background-image: url(../img/bg_ver.png);
     background-size: cover;
@@ -65,12 +69,11 @@ body{
 	height: max-content;
     display: flex;
     flex-direction: column;
-
 }
 .resend{
     font-size: 25px;
 	height: max-content;
-    padding: 50px;
+    padding: 25px;
 }
 .user_dp{
     text-align: center;
@@ -117,4 +120,9 @@ body{
 	visibility: visible;
 	bottom: 0;
 	right: -11em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

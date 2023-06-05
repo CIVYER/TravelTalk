@@ -20,9 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
-    justify-content: flex-start;
 }
 /* .img_border{
     display: flex;
@@ -55,6 +53,12 @@
     align-items: center;
     justify-content: center;
 }
+.bookmark + label{
+    align-self: flex-start;
+}
+.bookmarks + label{
+    align-self: flex-start;
+}
 /* .card_small {
 
 
@@ -65,7 +69,9 @@
 .card_large {
 
 } */
-
+:root{
+    --lines:4;
+}
 .place_img{
     display: flex;
     align-items: center;
@@ -88,13 +94,13 @@
     height: auto;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
 }
 .Ftext_desc{
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: var(--lines);
     -webkit-box-orient: vertical;
     font-family: "more-sugar-thin";
 	color: #353e62;
@@ -112,13 +118,13 @@
     height: auto;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
 }
 .utext_desc{
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: var(--lines);
     -webkit-box-orient: vertical;
     font-family: "more-sugar-thin";
 	color: #353e62;
@@ -136,13 +142,13 @@
     height: auto;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
 }
 .text_desc{
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: var(--lines);
     -webkit-box-orient: vertical;
     font-family: "more-sugar-thin";
 	color: #353e62;
